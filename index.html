@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    html {
+      background-color: black;
+      color: #ffffff;
+    }
+    .container {
+      width: 70%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .calculator {
+      display: flex;
+      flex-direction: column;
+    }
+    .calculator-row {
+      margin: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .number-display {
+      font-size: 48px;
+      width: 100%;
+      text-align: end;
+      margin-bottom: 8px;
+    }
+    .calculator-button {
+      width: 64px;
+      height: 64px;
+      padding: 5px;
+      margin: 5px;
+      border-radius: 32px;
+      border: none;
+      font-size: 32px;
+    }
+    .calculator-button:active {
+      background-color: #bbb;
+    }
+    .calculator-button-head {
+      background-color: #888;
+      color: #000;
+    }
+    .calculator-button-operator {
+      background-color: rgb(209, 126, 57);
+      color: #fff;
+    }
+    .calculator-button-active-operator {
+      background-color: #bbb;
+      color: rgb(209, 126, 57);
+    }
+    .calculator-button-number {
+      color: #fff;
+      background-color: #222;
+    }
+    .calculator-button-zero {
+      width: calc(128px + 10px);
+      border-radius: 32px 32px 32px 32px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="claculator-row"><h1>電卓アプリ</h1></div>
+        <div id="displayed-text" class="number-display claculator-row">0</div>
+        <div class="calculator-row">
+          <button id="C" class="calculator-button calculator-button-head">
+            C
+          </button>
+          <button
+            id="plus-minus"
+            class="calculator-button calculator-button-head"
+          >
+            ±
+          </button>
+          <button id="percent" class="calculator-button calculator-button-head">
+            %
+          </button>
+          <button
+            id="divide"
+            class="calculator-button calculator-button-operator"
+          >
+            ÷
+          </button>
+        </div>
+        <div class="calculator-row">
+          <button id="7" class="calculator-button calculator-button-number">
+            7
+          </button>
+          <button id="8" class="calculator-button calculator-button-number">
+            8
+          </button>
+          <button id="9" class="calculator-button calculator-button-number">
+            9
+          </button>
+          <button
+            id="multiply"
+            class="calculator-button calculator-button-operator"
+          >
+            ×
+          </button>
+        </div>
+        <div class="calculator-row">
+          <button id="4" class="calculator-button calculator-button-number">
+            4
+          </button>
+          <button id="5" class="calculator-button calculator-button-number">
+            5
+          </button>
+          <button id="6" class="calculator-button calculator-button-number">
+            6
+          </button>
+          <button
+            id="minus"
+            class="calculator-button calculator-button-operator"
+          >
+            -
+          </button>
+        </div>
+        <div class="calculator-row">
+          <button id="1" class="calculator-button calculator-button-number">
+            1
+          </button>
+          <button id="2" class="calculator-button calculator-button-number">
+            2
+          </button>
+          <button id="3" class="calculator-button calculator-button-number">
+            3
+          </button>
+          <button
+            id="plus"
+            class="calculator-button calculator-button-operator"
+          >
+            +
+          </button>
+        </div>
+        <div class="calculator-row">
+          <button
+            id="0"
+            class="calculator-button calculator-button-number calculator-button-zero"
+          >
+            0
+          </button>
+          <button id="dot" class="calculator-button calculator-button-number">
+            .
+          </button>
+          <button
+            id="equal"
+            class="calculator-button calculator-button-operator"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./build/index.js"></script>
+  </body>
+</html>
